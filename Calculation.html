@@ -1,68 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Harsha Vardhan Reddy - Calculation</title>
+
 <head>
-        <meta name="author" content="Harsha">
+  <title>Harsha Vardhan Reddy - Calculation</title>
 
-        <!-- Bootstrap required meta tags -->
-        <meta charset="UTF8">
-        <meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=no">
-    
-        <!-- link to Bootstrap CSS-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossorigin="anonymous">
-    
-        <!-- link to my own CSS -->
-        <link rel="stylesheet" href="./Harsha.css">
+  <meta name="author" content="Harsha">
+
+  <!-- Bootstrap required meta tags -->
+  <meta charset="UTF8">
+  <meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=no">
+
+  <!-- link to Bootstrap CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+
+  <script src="https://code.jquery.com/qunit/qunit-2.6.2.js" integrity="sha256-72OhbBvECs6Z5vG0GfPqiyYvTf8vhdEVHKQcacIcIeM="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./Harsha.css">
+  <script src="./function.js"></script>
+  <script src="./test.js"></script>
+  <script src="./Qunit.html"></script>
+
 </head>
-<body class="bgimg">
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                <a class="navbar-brand" href="#">My Page</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./contact.html">Contact <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="./Calculation.html">Converter <span class="sr-only">(current)</span></a>
-                    </li>
-                  </ul>
-                  <form class="form-inline mt-2 mt-md-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
-                </div>
-              </nav>
-              <h1> Harsha Vardhan Reddy </h1>
 
-            
-                <main>
-                    <div class="row">
-                        <section class="col-sm-8">
-                    <h2>MPH to KPH Speed Converter</h2>
-                     <p>Type a value to convert miles to kilometers:</p>
-                                
-            <p>
-        <label>MPH</label>
-<input id="inputMPH" type="number" placeholder="Miles per hour" oninput="speedConverter(this.value)" onchange="speedConverter(this.value)">
-             </p>
-           <p><label for="KMP">KPH: </label><span id="outputKPH" ></span> </p>
-                                
-                    <script>
-                function speedConverter(val) {
-             document.getElementById("outputKPH").innerHTML=val*1.609344;
-                    }
-        </script>
-        </main>
-        <footer class="footer">
-                &copy; 2019 Harsha Vardhan
-     </footer>
-        </body>
-        </html>
-        
+<body class="bgimg">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">My Page</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">Contact <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="./Calculation.html">Converter <span class="sr-only">(current)</span></a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Qunit.html">Qunit Test <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <h1> Harsha Vardhan Reddy </h1>
+
+
+  <main>
+    <div class="row">
+      <section class="col-sm-8">
+        <h2>MPH to KPH Speed Converter</h2>
+        <p>Type a value to convert miles to kilometers:</p>
+
+        <input type="text" placeholder="Enter MPH" id="mph" required value="1" /><br>
+        <input type="submit" value="Calculate" onclick="speedConverter()" /><br><br>
+        <output type="text" id="result"></output> KMPH
+        <p id="result"></p>
+        <p id="mph"> </p><br><br>
+
+        <div id="demo">
+            <h2>The XMLHttpRequest Object</h2>
+            <button type="button" onclick="loadDoc()">Change Content</button>
+            </div>
+
+
+
+  </main>
+  <footer class="footer">
+    &copy; 2019 Harsha Vardhan
+  </footer>
+</body>
+
+</html>
