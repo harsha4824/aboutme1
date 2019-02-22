@@ -1,8 +1,8 @@
 # aboutme1
 
 ## Repositry links
-- [Web page](https://github.com/harsha4824 "My web page")
-- [Source](https://github.com/harsha4824/aboutme1 "My source page")
+- [Web page](https://harsha4824.github.io/aboutme1/index.html "My web page")
+- [Source](https://github.com/harsha4824  "My Github page")
 
 ## About
 This repository is used for gaining more experience using Git and Makrdown.
