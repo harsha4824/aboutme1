@@ -1,4 +1,4 @@
-QUnit.test('Testing ', function (assert) {
+QUnit.test('Testing My Function ', function (assert) {
     
     assert.equal(speedConverter1(23),36.800000000000004,'Tested the conversion with 23 MPH');
     assert.equal(speedConverter1(0),0,'Tested the conversion with 0 MPH');

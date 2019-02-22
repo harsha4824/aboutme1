@@ -5,9 +5,6 @@ function speedConverter() {
     mph = Number(document.getElementById("mph").value);
 
     let kmph = speedConverter1(mph);
-
-    // document.getElementById("outputKPH").innerHTML=val*1.6;
-
 }
 
 function speedConverter1(mph) {

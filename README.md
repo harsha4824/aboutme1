@@ -13,6 +13,21 @@ This repository is used for gaining more experience using Git and Makrdown.
 1. [HTML](https://www.w3schools.com/html/ "https://www.w3schools.com/html/"): HTML is basic tool for any web page development.
 1. [Markdowm](https://en.wikipedia.org/wiki/Markdown "https://en.wikipedia.org/wiki/Markdown"): Markup is a lightweight markup language.
 
+## Terms
+
+- JavaScript
+- variable
+- expression
+- statement
+- loop
+- condition
+- event handler
+- types
+- function
+- arguments
+- return value
+- ajax
+
 ## Recommended Resources
 1. [WordPress](https://wordpress.com/ "https://wordpress.com/") -WordPress is used for publishing program.
 1. [TortoiseGit](https://tortoisegit.org/ "https://tortoisegit.org/") -It is used for assisting in managing git projects.
