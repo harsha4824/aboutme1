@@ -62,9 +62,11 @@
         <h2>MPH to KPH Speed Converter</h2>
         <p>Type a value to convert miles to kilometers:</p>
 
-        <input type="text" placeholder="Enter MPH" id="mph" required value="1" /><br>
-        <input type="submit" value="Calculate" onclick="speedConverter()" /><br><br>
-        <output type="text" id="result"></output> KMPH
+        <input type="text" placeholder="Enter MPH" id="mph" required  /><br>
+        <input id = "calc" type="submit" value="Calculate" onclick="speedConverter()" /><br><br>
+        <p type="text" id="result"></p>
+        <button id='localstorageid' onclick="localSet()" >localstorage values</button>
+        <input id='lc' type='text'>
         <p id="result"></p>
         <p id="mph"> </p><br><br>
 
